@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Palindrome number</title>
 </head>
 <body>
-    <form meta="post" action="<?php $_SERVER["PHP_SELF"] ?>">
+    <form method="post" action="<?php $_SERVER["PHP_SELF"] ?>">
     <label>Enter the limit:</label>
     <input type="number" name="number">
     <button type="submit">submit</button>
