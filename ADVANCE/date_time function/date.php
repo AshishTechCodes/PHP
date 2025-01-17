@@ -36,7 +36,7 @@
         $d = strtotime("08:00pm January 16 2025");
         echo "Created date is " . date("Y-m-d h:i:sa", $d) . "<br><br>";
 
-        echo date("Y-m-d h:i:sa", time())."<br><br>";
+        echo date("Y-m-d h:i:sa", time()) . "<br><br>";
 
         $d = strtotime("tomorrow");
         echo date("Y-m-d h:i:sa", $d) . "<br><br>";
@@ -46,6 +46,13 @@
 
         $d = strtotime("5year 3months 10days");
         echo date("Y-m-d h:i:sa", $d) . "<br><br>";
+
+
+        date_default_timezone_set("Asia/kolkata");
+        for($i = 0; $i < 5; $i++) {
+        echo "The time is " . date("h:i:sa")."<br>";
+        sleep(1);
+        }
         ?>
     </center>
 </body>
